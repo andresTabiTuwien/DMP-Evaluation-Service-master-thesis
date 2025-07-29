@@ -30,5 +30,5 @@ dmp:
   metric:
     endpointURL: "http://localhost:8080/metrics"
   benchmark:
-    endpointURL: "http://localhost:8080/benchmarks"
+    endpointURL: ${BENCHMARK_URL}
 
