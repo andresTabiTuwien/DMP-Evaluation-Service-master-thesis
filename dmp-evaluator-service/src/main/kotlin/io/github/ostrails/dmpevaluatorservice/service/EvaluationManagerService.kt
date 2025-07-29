@@ -25,7 +25,7 @@ import org.springframework.stereotype.Service
 class EvaluationManagerService(
     private val resultEvaluationResultRepository: EvaluationResultRepository,
     private val evaluationReportRepository: EvaluationReportRepository,
-    private val benchmarService: BenchmarService,
+    private val benchmarkService: BenchmarService,
     private val evaluationService: EvaluationService,
     private val toRDFService: ToRDFService,
     private val testService: TestService
@@ -94,7 +94,7 @@ class EvaluationManagerService(
                 val reportIdentifier = report.reportId
                 //jsonFilevalidator(file)
                 val maDMP = fileToJsonObject(file) // Translate a json file to json object
-                val benchmark = benchmarService.getBenchmarkDetail(benchmarkId)
+                val benchmark = benchmarkService.getBenchmarkDetail(benchmarkId)
                     val evaluations = evaluationService.generateTestsResultsFromBenchmark(benchmark, maDMP, reportIdentifier.toString())
                     val savedEvaluations = evaluations.map { resultEvaluationResultRepository.save(it).awaitSingle() }
                     val updateReport = report.copy(
