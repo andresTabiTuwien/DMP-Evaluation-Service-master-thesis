@@ -39,7 +39,7 @@ class DCSCompletenessEvaluator: EvaluatorPlugin {
         return PluginInfo(
             pluginId = getPluginIdentifier(),
             description = "Evaluator to perform completeness tests",
-            tests = listOf()
+            functions = listOf()
         )
     }
 

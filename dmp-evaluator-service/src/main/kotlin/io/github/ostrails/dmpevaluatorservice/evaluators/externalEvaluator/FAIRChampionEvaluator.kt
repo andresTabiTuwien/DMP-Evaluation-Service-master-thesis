@@ -42,7 +42,7 @@ class FAIRChampionEvaluato(
         return PluginInfo(
             pluginId = getPluginIdentifier(),
             description = "Evaluator to perform completeness tests",
-            tests = listOf()
+            functions = listOf()
         )
     }
 
