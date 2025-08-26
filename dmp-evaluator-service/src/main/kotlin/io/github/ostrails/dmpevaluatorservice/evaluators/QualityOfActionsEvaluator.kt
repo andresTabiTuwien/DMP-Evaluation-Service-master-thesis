@@ -31,7 +31,7 @@ class QualityOfActionsEvaluator(
     override fun getPluginInformation(): PluginInfo {
         return PluginInfo(
             pluginId = getPluginIdentifier(),
-            description = "Evaluator to perform completeness tests",
+            description = "Evaluator to perform FAIR tests",
             functions = listOf()
         )
     }

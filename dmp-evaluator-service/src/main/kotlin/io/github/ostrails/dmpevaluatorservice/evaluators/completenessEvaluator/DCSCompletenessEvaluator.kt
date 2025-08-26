@@ -38,7 +38,7 @@ class DCSCompletenessEvaluator: EvaluatorPlugin {
     override fun getPluginInformation(): PluginInfo {
         return PluginInfo(
             pluginId = getPluginIdentifier(),
-            description = "Evaluator to perform completeness tests",
+            description = "Evaluator to perform DCScompleteness tests",
             functions = listOf()
         )
     }
